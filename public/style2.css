@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 10px groove rgb(14, 8, 71);
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(to bottom, rgba(17, 16, 16, 0.459), rgba(7, 5, 39, 0.445)), url('./IMG_20200315_143528_145.jpg');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+.chats {
+    width: calc(100% - 240px);
+    float: right;
+    height: 100vh;
+}
+
+.users {
+    height: 100vh;
+    border-right: 10px groove rgba(10, 2, 59, 0.747);
+    width: 240px;
+    float: left;
+    background-color: rgba(0, 0, 0, 0.678);
+}
+
+.img img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+.img {
+    padding-bottom: 10px;
+}
+
+.you {
+    text-align: center;
+    color: blanchedalmond;
+    width: 100%;
+    height: 160px;
+    padding-top: 30px;
+    background-color: rgba(3, 9, 43, 0.493);
+}
+
+.myname {
+    text-shadow: 0 0 20px rgba(146, 28, 7, 0.918);
+}
+
+.controls {
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    border-top: 10px groove rgba(18, 2, 61, 0.774);
+}
+
+.message {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.message button {
+    font-size: 20px;
+    text-align: center;
+    margin: 0 0 0 10px;
+    width: 25px;
+    height: 25px;
+    border: 2px solid rgba(4, 107, 148, 0.61);
+    background-color: rgb(21, 9, 131);
+
+    outline: none;
+    border-radius: 10px;
+}
+
+.controls input {
+    width: 200px;
+    height: 25px;
+    background-color: transparent;
+    border: 2px solid rgba(0, 0, 255, 0.445);
+    padding: 12px;
+    outline: none;
+   border-radius: 10px;
+    color: blanchedalmond;
+}
+
+.other {
+    width: 30px;
+    height: 30px;
+}
+
+.chat {
+    height: calc(100vh - 50px);
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.chat::-webkit-scrollbar {
+
+    border-radius: 20px;
+    background-color: rgba(10, 10, 117, 0.733);
+}
+
+.chat::-webkit-scrollbar-thumb {
+    display: block;
+    border-radius: 20px;
+    background-color: rgb(24, 3, 51);
+}
+
+.msg:first-of-type{
+    margin-top: 50px;
+}
+
+.msg {
+    position: relative;
+    width: 90%;
+    border-radius: 20px;
+    color: blanchedalmond;
+    padding: 10px 10px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    color: rgba(155, 207, 209, 0.671);
+    background-color: rgba(5, 5, 49, 0.815);
+}
+
+.me{
+    float: right;
+    background-color: rgba(6, 28, 90, 0.548);
+}
+.chatio{
+    width: 90%;
+    text-align: center;
+    background-color: rgba(43, 3, 107, 0.5);
+    margin: 20px auto;
+}
+.otherio{
+    float: left;
+}
+.clear{
+    height: 0;
+    clear: both;
+}
+.USER{
+    text-align: center;
+    color: rgba(255, 255, 255, 0.959);
+    padding: 10px;
+    border-radius: 20px;
+    border-bottom: 5px solid rgba(5, 64, 92, 0.377);
+}
+.others{
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height:calc(100vh - 180px);
+}
+.others::-webkit-scrollbar{
+    background-color: rgba(3, 52, 143, 0.541);
+border-radius: 20px;
+}
+.others::-webkit-scrollbar-thumb{
+    display: block;
+    border-radius: 20px;
+    background-color: rgb(15, 33, 194);
+   width: 5px;
+    appearance: none;
+}
+.au{
+    position: absolute;
+    top: -20px;
+    left: 0;
+}
+.time{
+    position: absolute;
+    top: -20px;
+    right: 0;
+}

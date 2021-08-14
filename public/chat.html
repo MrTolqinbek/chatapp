@@ -1,0 +1,45 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat App</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="users">
+            <div class="you">
+                <div class="img">
+                    <img src="./IMG_20200215_090917_246.jpg" alt="">
+                </div>
+                <div class="myname" id="userName">
+                   
+                </div>
+            </div>
+            <div class="others" id="others">
+
+            </div>
+        </div>
+        <div class="chats">
+            <div class="chat" id="chat">
+
+            </div>
+            <div class="controls">
+                <div class="message">
+                    <input type="text" id="inp">
+                    <button id="btn"></button>
+                </div>
+                <div class="other">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
