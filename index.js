@@ -2,6 +2,7 @@ const express = require('express')
 const socketio = require('socket.io')
 const http = require('http')
 const path = require('path')
+require('dotenv').config()
 const app = express()
 const userController = require('./userController.js')
 const publicdir = path.join(__dirname, "/public")
@@ -47,6 +48,6 @@ io.on('connection', (socket) => {
 
 })
 
-server.listen(9000, () => {
+server.listen(process.env.PORT||9000, () => {
     console.log("Server is running")
 })
